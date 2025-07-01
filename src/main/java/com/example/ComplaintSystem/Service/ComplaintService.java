@@ -58,7 +58,7 @@ public class ComplaintService
         {
             LocalDateTime resolvedDate= LocalDateTime.now();
             complaintEntity.setResolvedOn(resolvedDate);
-            long durationvar= ChronoUnit.DAYS.between(resolvedDate,complaintEntity.getRaisedOn());
+            long durationvar= ChronoUnit.MINUTES.between(resolvedDate,complaintEntity.getRaisedOn());
             complaintEntity.setResolutionTime(durationvar);
 
         } else

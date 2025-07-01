@@ -30,9 +30,6 @@ public class ComplaintEntity
     private ComplaintStatus status=ComplaintStatus.OPEN;
 
 
-
-
-
     public int getComplaintID() {
         return complaintID;
     }
